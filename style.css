@@ -87,7 +87,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px; /* Ajuste o padding conforme necessário */
-    background-color: #f0f0f0; /* Cor de fundo do cabeçalho */
 }
 
 .logo-left img, .logo-right img {
