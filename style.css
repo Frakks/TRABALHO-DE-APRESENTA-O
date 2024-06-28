@@ -81,3 +81,25 @@ footer {
     text-decoration: none;
     font-size: 16px;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Ajuste o padding conforme necessário */
+    background-color: #f0f0f0; /* Cor de fundo do cabeçalho */
+}
+
+.logo-left img, .logo-right img {
+    max-height: 50px; /* Ajuste o tamanho conforme necessário */
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do container */
+}
+
+.logo-left {
+    flex: 1; /* Ajusta o tamanho proporcionalmente */
+}
+
+.logo-right {
+    flex: 1; /* Ajusta o tamanho proporcionalmente */
+    text-align: right; /* Alinha a imagem à direita */
+}
