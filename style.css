@@ -26,6 +26,48 @@
     padding: 0;
 }
 
+ody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #009440;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+nav a:hover {
+    background-color: #555;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.main-content {
+    margin-bottom: 20px;
+}
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 .menu li{
     margin-left: 20px;
 }
