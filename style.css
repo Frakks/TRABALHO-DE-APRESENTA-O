@@ -1,104 +1,205 @@
-.header{
-    background-color: green;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.cabecalho{
-    display:flex ;
-    justify-content: space-between;
-    align-items: center;
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    scroll-behavior: smooth; /* Rolagem suave em todo o site */
+}
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.menu {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-ody {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 header {
-    background-color: #009440;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-nav {
     background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+    background-image: linear-gradient(#0099FF,#474747);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 100px;
+    vertical-align: middle;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.headline {
+    font-size: 2.8rem;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #ccc;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.social-links a {
+    margin-left: 15px;
+    display: inline-block;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
     padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
+
 nav a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
 }
+
 nav a:hover {
-    background-color: #555;
+    background-color: rgba(255, 255, 255, 0.2);
 }
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
+
+main {
+    margin-top: 100px; /* Espaçamento para evitar sobreposição com o cabeçalho */
 }
-.main-content {
-    margin-bottom: 20px;
-}
-footer {
-    background-color: #000000;
-    color: white;
+
+.section {
+    padding: 120px 0;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.section h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.section .image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.section .image-container img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.section .image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-}
-
-.menu li{
-    margin-left: 20px;
-}
-
-.menu li:first-child {
-    margin-left: 0;
-}
-
-.menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-header {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 10px 20px; /* Ajuste o padding conforme necessário */
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-.logo-left img, .logo-right img {
-    max-height: 50px; /* Ajuste o tamanho conforme necessário */
-    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do container */
+.section .image-container:hover {
+    transform: scale(1.05);
 }
 
-.logo-left {
-    flex: 1; /* Ajusta o tamanho proporcionalmente */
+.section .image-container:hover .overlay {
+    opacity: 1;
 }
 
-.logo-right {
-    flex: 1; /* Ajusta o tamanho proporcionalmente */
-    text-align: right; /* Alinha a imagem à direita */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
 }
+
+footer p {
+    font-size: 1rem;
+}
+
+footer .social-links {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .headline {
+        font-size: 2.2rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .section {
+        padding: 100px 0;
+    }
+
+    .section h2 {
+        font-size: 2.5rem;
+    }
+
+    .section p {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+}
+
+.social-links img {
+    height: 100px; /* Ajuste aqui o tamanho desejado da imagem */
+    width: auto;
+}
+
+.social-linkes img {
+    height: 30px; /* Ajuste aqui o tamanho desejado da imagem */
+    width: auto;
+    display: block; /* Remove espaços indesejados entre as imagens */
+    margin-bottom: 10px; /* Espaçamento entre as imagens, opcional */
+}
+
+
