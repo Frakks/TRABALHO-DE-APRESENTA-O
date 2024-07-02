@@ -1,205 +1,200 @@
 /* Reset de estilos básicos */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    box-sizing: border-box; /* Garante que o tamanho total do elemento inclua bordas e preenchimentos */
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
-    background-color: #f5f5f5;
+    font-family: 'Montserrat', sans-serif; /* Define a fonte principal */
+    line-height: 1.6; /* Define o espaçamento entre linhas */
+    background-color: #f5f5f5; /* Cor de fundo para o corpo da página */
     scroll-behavior: smooth; /* Rolagem suave em todo o site */
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 1200px; /* Define a largura máxima do container */
+    margin: 0 auto; /* Centraliza o container na página */
+    padding: 0 20px; /* Adiciona espaçamento interno ao container */
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    transition: background-color 0.3s ease;
-    background-image: linear-gradient(#0099FF,#474747);
+    background-color: #333; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto do cabeçalho */
+    padding: 20px 0; /* Espaçamento interno do cabeçalho */
+    position: fixed; /* Fixa o cabeçalho na parte superior da página */
+    width: 100%; /* Largura total do cabeçalho */
+    z-index: 1000; /* Camada de sobreposição do cabeçalho */
+    top: 0; /* Posiciona o cabeçalho no topo da página */
+    left: 0; /* Posiciona o cabeçalho no canto esquerdo da página */
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+    background-image: linear-gradient(#0099FF, #474747); /* Imagem de fundo do cabeçalho */
 }
 
 header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: flex; /* Exibe os elementos em linha */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
 }
 
 .logo img {
-    height: 100px;
-    vertical-align: middle;
+    height: 100px; /* Altura do logotipo */
+    vertical-align: middle; /* Alinha verticalmente o logotipo */
 }
 
 .header-content {
-    text-align: center;
+    text-align: center; /* Alinha o conteúdo do cabeçalho ao centro */
 }
 
 .headline {
-    font-size: 2.8rem;
-    font-weight: 900;
-    margin-bottom: 5px;
+    font-size: 2.8rem; /* Tamanho da fonte do título principal */
+    font-weight: 900; /* Peso da fonte do título principal */
+    margin-bottom: 5px; /* Espaçamento inferior do título */
 }
 
 .tagline {
-    font-size: 1.2rem;
-    font-style: italic;
-    color: #ccc;
+    font-size: 1.2rem; /* Tamanho da fonte do slogan */
+    font-style: italic; /* Estilo da fonte itálico */
+    color: #ccc; /* Cor do slogan */
 }
 
 .social-links {
-    display: flex;
-    align-items: center;
+    display: flex; /* Exibe os links sociais em linha */
+    align-items: center; /* Alinha os itens verticalmente */
 }
 
 .social-links a {
-    margin-left: 15px;
-    display: inline-block;
+    margin-left: 15px; /* Espaçamento entre os links sociais */
+    display: inline-block; /* Exibe os links como blocos inline */
 }
 
 nav {
-    background-color: rgba(0, 0, 0, 0.8);
-    text-align: center;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo da navegação */
+    text-align: center; /* Alinha o texto da navegação ao centro */
+    padding: 10px 0; /* Espaçamento interno da navegação */
+    position: sticky; /* Fixa a navegação ao rolar a página */
+    top: 0; /* Posiciona a navegação no topo da página */
+    z-index: 100; /* Camada de sobreposição da navegação */
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 5px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease;
+    color: #fff; /* Cor do texto dos links de navegação */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    padding: 10px 20px; /* Espaçamento interno dos links */
+    margin: 0 5px; /* Espaçamento entre os links */
+    font-size: 1.2rem; /* Tamanho da fonte dos links */
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
 }
 
 nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo ao passar o mouse sobre os links */
 }
 
 main {
-    margin-top: 100px; /* Espaçamento para evitar sobreposição com o cabeçalho */
+    margin-top: 100px; /* Espaçamento superior para evitar sobreposição com o cabeçalho */
 }
 
 .section {
-    padding: 120px 0;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
+    padding: 120px 0; /* Espaçamento interno das seções */
+    text-align: center; /* Alinha o texto ao centro */
+    position: relative; /* Define a posição relativa para permitir posicionamento absoluto */
+    overflow: hidden; /* Esconde conteúdo que excede os limites */
 }
 
 .section h2 {
-    font-size: 3rem;
-    margin-bottom: 30px;
-    color: #333;
+    font-size: 3rem; /* Tamanho da fonte do título da seção */
+    margin-bottom: 30px; /* Espaçamento inferior do título */
+    color: #333; /* Cor do título da seção */
 }
 
 .section p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #666;
-    margin-bottom: 50px;
+    font-size: 1.2rem; /* Tamanho da fonte do texto da seção */
+    line-height: 1.8; /* Altura da linha do texto */
+    color: #666; /* Cor do texto da seção */
+    margin-bottom: 50px; /* Espaçamento inferior do texto */
 }
 
 .section .image-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    position: relative; /* Define a posição relativa para o container de imagem */
+    overflow: hidden; /* Esconde conteúdo que excede os limites */
+    border-radius: 8px; /* Define o raio da borda do container */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra do container */
+    transition: transform 0.3s ease; /* Transição suave ao transformar */
 }
 
 .section .image-container img {
-    max-width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
+    max-width: 100%; /* Largura máxima da imagem */
+    height: auto; /* Altura automática da imagem */
+    transition: transform 0.3s ease; /* Transição suave ao transformar */
 }
 
 .section .image-container .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    position: absolute; /* Define a posição absoluta */
+    top: 0; /* Posiciona no topo */
+    left: 0; /* Posiciona à esquerda */
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com transparência */
+    color: #fff; /* Cor do texto do overlay */
+    display: flex; /* Exibe flexivelmente */
+    justify-content: center; /* Justifica o conteúdo */
+    align-items: center; /* Alinha os itens */
+    opacity: 0; /* Opacidade inicial */
+    transition: opacity 0.3s ease; /* Transição suave da opacidade */
 }
 
 .section .image-container:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Aumenta a escala ao passar o mouse */
 }
 
 .section .image-container:hover .overlay {
-    opacity: 1;
+    opacity: 1; /* Torna o overlay visível ao passar o mouse */
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 30px 0;
-    margin-top: 50px;
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto do rodapé */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 30px 0; /* Espaçamento interno do rodapé */
+    margin-top: 50px; /* Espaçamento superior do rodapé */
 }
 
 footer p {
-    font-size: 1rem;
+    font-size: 1rem; /* Tamanho da fonte do texto do rodapé */
 }
 
 footer .social-links {
-    margin-top: 20px;
+    margin-top: 20px; /* Espaçamento superior dos links sociais no rodapé */
 }
 
 @media (max-width: 768px) {
     .headline {
-        font-size: 2.2rem;
+        font-size: 2.2rem; /* Tamanho da fonte do título principal em telas menores */
     }
 
     .tagline {
-        font-size: 1rem;
+        font-size: 1rem; /* Tamanho da fonte do slogan em telas menores */
     }
 
     .section {
-        padding: 100px 0;
+        padding: 100px 0; /* Espaçamento interno das seções em telas menores */
     }
 
     .section h2 {
-        font-size: 2.5rem;
+        font-size: 2.5rem; /* Tamanho da fonte do título da seção em telas menores */
     }
 
     .section p {
-        font-size: 1.1rem;
-        margin-bottom: 30px;
+        font-size: 1.1rem; /* Tamanho da fonte do texto da seção em telas menores */
+        margin-bottom: 30px; /* Espaçamento inferior do texto da seção em telas menores */
     }
 }
 
 .social-links img {
-    height: 100px; /* Ajuste aqui o tamanho desejado da imagem */
-    width: auto;
+    height: 100px; /* Altura das imagens dos links sociais */
+    width: auto; /* Largura automática das imagens dos links sociais */
 }
 
 .social-linkes img {
-    height: 30px; /* Ajuste aqui o tamanho desejado da imagem */
-    width: auto;
-    display: block; /* Remove espaços indesejados entre as imagens */
-    margin-bottom: 10px; /* Espaçamento entre as imagens, opcional */
+    height: 30px; /* Altura das imagens dos links sociais */
 }
-
-
